@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Virtual environments
+venv/
+env/
+ENV/
+.VENV/
+
+# Django specific
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+
+# VS Code
+.vscode/
+
+# Node.js frontend
+finance-frontend/node_modules/
+finance-frontend/.next/
+finance-frontend/.env.local
