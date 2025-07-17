@@ -5,9 +5,9 @@ class User(AbstractUser):
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=30, blank=True)
-    password = models.CharField(max_length=128, blank=True)
 
-    REQUIRED_FIELDS = ["email","password"]
+    USERNAME_FIELD = 'email'  # Use email for login
+    REQUIRED_FIELDS = ['username']  # Required fields besides email and password
 
 class Catagory(models.Model):
     name = models.CharField(max_length=100, unique=True)

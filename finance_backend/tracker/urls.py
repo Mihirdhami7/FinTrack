@@ -1,4 +1,4 @@
-from finance_backend.urls import path
+from django.urls import path
 from . import views
 
 urlpatterns = [
